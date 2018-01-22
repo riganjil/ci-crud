@@ -10,29 +10,28 @@
 </head>
 <body>
 <div class="container">
+    <!-- Related Rented Row -->
     <div class="row">
-        <div class="col-md-12">
-            <h1>Hello, world!</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <form action="<?php echo base_url('login/aksi_login'); ?>" method="post">
+        <div class="col-md-6">
+            <h3 class="my-4">Login</h3>
+            <hr>
+            <form action="<?php echo base_url('login/aksi_login'); ?>" id="" method="post">
                 <div class="form-group">
                     <label for="">Username</label>
-                    <input type="text" class="form-control" name="username">
+                    <input type="text" name="username" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="password" class="form-control" name="password">
+                    <input type="password" name="password" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for=""></label>
-                    <input type="submit" class="btn btn-primary" value="Login">
+                    <button class="btn btn-primary">Login</button>
+                    <small><a href="<?php echo base_url('register'); ?>">Daftar disini</a></small>
                 </div>
             </form>
         </div>
     </div>
+    <!-- /.row -->
 </div>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

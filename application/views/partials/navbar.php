@@ -13,14 +13,27 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">Sepak Bola</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                <?php if ($this->session->userdata('status') == 'login') { ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoryLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <?php echo $this->session->userdata("nama"); ?>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="categoryLink">
+                            <a class="dropdown-item" href="<?php echo base_url('profil') ?>">Profil</a>
+                            <a class="dropdown-item" href="<?php echo base_url('login/logout') ?>">Logout</a>
+                        </div>
+                    </li>
+                <?php }else{ ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url('login') ?>">Login</a>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </div>

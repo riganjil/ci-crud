@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['login'] = "login/index";
+
+$route['category/(:any)'] = "category/select_list/$1";

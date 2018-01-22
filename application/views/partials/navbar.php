@@ -13,10 +13,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="<?php echo base_url('category/news') ?>">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sepak Bola</a>
+                    <a class="nav-link" href="<?php echo base_url('category/sepak-bola') ?>">Sepak Bola</a>
                 </li>
                 <?php if ($this->session->userdata('status') == 'login') { ?>
                     <li class="nav-item dropdown">

@@ -18,8 +18,20 @@ class Home extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
+    function __construct()
+    {
+        parent::__construct();
+        $this->navbar = "partials/navbar";
+        $this->footer = "partials/footer";
+    }
+
     public function index()
     {
-        $this->load->view('home');
+        $data['title'] = "Berita.co.id";
+        $data['navbar'] = "partials/navbar";
+        $data['content'] = 'home';
+        $data['footer'] = "partials/footer";
+        $this->load->view('layout/main', $data);
     }
 }

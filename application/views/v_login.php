@@ -11,17 +11,19 @@
 <body>
 <div class="container">
     <div class="row">
-        <h1>Hello, world!</h1>
+        <div class="col-md-12">
+            <h1>Hello, world!</h1>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-3">
             <form action="<?php echo base_url('login/aksi_login'); ?>" method="post">
                 <div class="form-group">
-                    <label for=""></label>
+                    <label for="">Username</label>
                     <input type="text" class="form-control" name="username">
                 </div>
                 <div class="form-group">
-                    <label for=""></label>
+                    <label for="">Password</label>
                     <input type="password" class="form-control" name="password">
                 </div>
                 <div class="form-group">

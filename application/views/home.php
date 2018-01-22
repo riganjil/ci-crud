@@ -114,7 +114,7 @@
 <div class="card-deck">
     <?php foreach ($data->result_array() as $row) { ?>
         <div class="card">
-            <a href="<?php echo base_url('news/'. $row['id']) ?>">
+            <a href="<?php echo base_url('news/' . $row['id']) ?>">
                 <img class="card-img-top" src="<?php echo $row['gambar'] ?>" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['judul'] ?></h5>
@@ -129,38 +129,42 @@
     <?php } ?>
 
     <div class="card">
-        <img class="card-img-top" src="http://placehold.it/500x300" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">News title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-        </div>
+        <a href="">
+            <img class="card-img-top" src="http://placehold.it/500x300" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">News title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+            </div>
+        </a>
     </div>
 
     <div class="card">
-        <img class="card-img-top" src="http://placehold.it/500x300" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">News title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-        </div>
+        <a href="">
+            <img class="card-img-top" src="http://placehold.it/500x300" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">News title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+            </div>
+        </a>
     </div>
 
     <div class="card">
-        <img class="card-img-top" src="http://placehold.it/500x300" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">News title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-        </div>
+        <a href="">
+            <img class="card-img-top" src="http://placehold.it/500x300" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">News title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+            </div>
+        </a>
     </div>
 </div>
 <!-- /.row -->

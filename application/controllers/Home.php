@@ -22,6 +22,7 @@ class Home extends CI_Controller {
     function __construct()
     {
         parent::__construct();
+        $this->load->model('m_berita');
         $this->navbar = "partials/navbar";
         $this->footer = "partials/footer";
     }
@@ -32,6 +33,8 @@ class Home extends CI_Controller {
         $data['navbar'] = "partials/navbar";
         $data['content'] = 'home';
         $data['footer'] = "partials/footer";
+
+        $data['data'] = $this->m_berita->select_all();
         $this->load->view('layout/main', $data);
     }
 }

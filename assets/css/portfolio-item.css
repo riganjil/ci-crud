@@ -75,19 +75,22 @@ a > .media > .media-body > p {
   opacity: .7;
 }
 
-.card-deck > .card > .card-body {
+.card-deck > .card > a > .card-body {
   padding: 10px 2px;
 }
-.card-deck > .card > img {
+.card-deck > .card > a > img {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.card-deck > .card > .card-body > h5  {
-  font-size: 16px;
-}
-.card-deck > .card > .card-body > p {
+.card-deck > .card > a > .card-body > h5  {
   font-size: 14px;
+  color: #212121;
+}
+.card-deck > .card > a > .card-body > p {
+  font-size: 12px;
+  color: #212121;
+  opacity: .9;
 }
 
 

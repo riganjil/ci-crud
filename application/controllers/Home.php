@@ -29,7 +29,7 @@ class Home extends CI_Controller {
 
     public function index()
     {
-        $data['title'] = "Berita.co.id";
+        $data['title'] = "Gerai Republika";
         $data['navbar'] = "partials/navbar";
         $data['content'] = 'home';
         $data['footer'] = "partials/footer";

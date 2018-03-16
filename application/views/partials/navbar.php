@@ -1,22 +1,23 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="<?php echo base_url('/') ?>">Berita.co.id</a>
+        <a class="navbar-brand" href="<?php echo base_url('/') ?>"><img src="https://gerai.republika.co.id/files/gerai/images/logon.png" alt="" class="img-fluid" width="80"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo base_url('/') ?>">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('category/news') ?>">E-Paper</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('category/news') ?>">News</a>
+                    <a class="nav-link" href="<?php echo base_url('category/sepak-bola') ?>">Foto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('category/sepak-bola') ?>">Sepak Bola</a>
+                    <a class="nav-link" href="<?php echo base_url('category/sepak-bola') ?>">Kliping</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('category/sepak-bola') ?>">Belajar Al-Quran</a>
                 </li>
                 <?php if ($this->session->userdata('status') == 'login') { ?>
                     <li class="nav-item dropdown">
